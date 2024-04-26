@@ -1,2 +1,13 @@
-# Decentralized-Voting-System
-A decentralized secured voting system is a technological solution designed to ensure the integrity, security, and privacy of the voting process without relying on a central authority.It leverages blockchain technology, cryptographic techniques, and decentralized networks to ensure the integrity, privacy, and accessibility of the voting process.
+# Sample Hardhat Project
+
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Lock.ts
+```
