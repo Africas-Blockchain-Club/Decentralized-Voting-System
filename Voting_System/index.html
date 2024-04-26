@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusive Vote</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Inclusive Vote</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="view-ballot.html">View Ballot</a></li>
+                    <li><a href="vote.html">Cast a Vote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Inclusive Vote</h1>
+        <p>Click the button below to register and start voting!</p>
+        <button id="get-started-btn">Let's Get Started</button>
+    </main>
+    <script>
+        document.getElementById("get-started-btn").addEventListener("click", function() {
+            window.location.href = "register.html";
+        });
+    </script>
+
+    
+</body>
+</html>

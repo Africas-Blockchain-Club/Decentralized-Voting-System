@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>View Ballot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inclusive Vote</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="view-ballot.html">View Ballot</a></li>
+          <li><a href="vote.html">Cast a Vote</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Available Elections</h2>
+      <ul>
+        <li>
+          <h3>Election 1</h3>
+          <p>Description of Election 1</p>
+          <button onclick="viewCandidates(1)">View Candidates</button>
+        </li>
+        <li>
+          <h3>Election 2</h3>
+          <p>Description of Election 2</p>
+          <button onclick="viewCandidates(2)">View Candidates</button>
+        </li>
+        <li>
+          <h3>Election 3</h3>
+          <p>Description of Election 3</p>
+          <button onclick="viewCandidates(3)">View Candidates</button>
+        </li>
+      </ul>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

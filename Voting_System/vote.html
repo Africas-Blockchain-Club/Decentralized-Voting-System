@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cast a Vote</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inclusive Vote</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="view-ballot.html">View Ballot</a></li>
+          <li><a href="vote.html">Cast a Vote</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Cast Your Vote</h2>
+      <form>
+        <label for="election">Select an Election:</label>
+        <select id="election" name="election">
+          <option value="1">Election 1</option>
+          <option value="2">Election 2</option>
+          <option value="3">Election 3</option>
+        </select>
+        <br />
+        <label for="candidate">Select a Candidate:</label>
+        <select id="candidate" name="candidate">
+          <option value="1">Candidate 1</option>
+          <option value="2">Candidate 2</option>
+          <option value="3">Candidate 3</option>
+        </select>
+        <br />
+        <button type="submit">Submit Vote</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
