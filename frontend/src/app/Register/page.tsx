@@ -1,9 +1,10 @@
+import React from "react";
+
 const Register = () => {
     return(
 
-
         <form className="max-w-sm mx-auto">
-          <div className="mb-5">
+          <div className="mb-10">
             <label htmlFor="Uid" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique ID </label>
             <input type="Uid" id="Uid" className="shadow-sm bg-base-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-base-100 dark:border-gray-600 dark:placeholder-base-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ax0293Cnsjdf" required />
           </div>
