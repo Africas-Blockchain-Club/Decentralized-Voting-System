@@ -1,5 +1,4 @@
-m// SPDX_License-Identifier: MIT
-// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.16;
 
 contract Voting {
