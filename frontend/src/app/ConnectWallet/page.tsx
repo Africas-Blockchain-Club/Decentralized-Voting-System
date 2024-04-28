@@ -1,6 +1,8 @@
+import Layout from "../components/layout";
+
 const ConnectWallet= () => {
     return(
-
+        <Layout>
         <div className="w-full max-w-sm mx-auto p-4 bg-base border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-base-100 dark:border-gray-700">
         <h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
         Connect wallet
@@ -52,6 +54,7 @@ const ConnectWallet= () => {
         Why do I need to connect with my wallet?</a>
         </div>
         </div>
+        </Layout>
         
     )
 }

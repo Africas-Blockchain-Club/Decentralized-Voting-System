@@ -12,8 +12,8 @@ const NavBar = () => {
   return (
         <nav className="bg-transparent border-base-100 dark:bg-transparent">
           <div className="max-w-screen-xl bbg-transparent flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="/Gemini_Generated_Image_c1tds7c1tds7c1td-removebg.png" className="h-8" alt="Flowbite Logo" />
+            <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/Gemini_Generated_Image_c1tds7c1tds7c1td-removebg.png" className="h-10 w-10" alt="Flowbite Logo" />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CryptoVotes</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-base-100 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">

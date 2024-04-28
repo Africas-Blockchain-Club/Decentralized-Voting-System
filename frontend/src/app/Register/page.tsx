@@ -1,8 +1,8 @@
 import React from "react";
-
+import Layout from "../components/layout";
 const Register = () => {
     return(
-
+      <Layout>
         <form className="max-w-sm mx-auto">
           <div className="mb-10">
             <label htmlFor="Uid" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique ID </label>
@@ -28,7 +28,7 @@ const Register = () => {
           </div>
           <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register to Vote</button>
         </form>
-
+      </Layout>
     )
 }
 export default Register;

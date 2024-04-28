@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Layout from "./layout";
 
 const LandingPage = () => { 
     const path = usePathname();
@@ -10,7 +11,7 @@ const LandingPage = () => {
     };
 
     return (
-    <div className="flex flex-col h-screen" style={{backgroundImage:'url(/Gemini_Generated_Image_twew78twew78twew.jpg)'}}>       
+    <Layout>
         <section className="h-full w-full bg-base dark:bg-base-100 flex justify-center items-center">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Welcome to CryptoVotes_</h1>
@@ -22,7 +23,7 @@ const LandingPage = () => {
                 </div>
             </div>
         </section>
-    </div> 
+    </Layout>
     )
 }
 export default LandingPage;
