@@ -17,6 +17,8 @@ contract VotingContract {
         bool registered;
         address vote;
     }
+
+    
     uint256 public candidatesCount = 0;
     address[] _candidateAddresses;
     address public owner;
