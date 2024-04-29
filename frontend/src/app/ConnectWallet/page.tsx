@@ -3,11 +3,12 @@ import Layout from "../components/layout";
 const ConnectWallet= () => {
     return(
         <Layout>
-        <div className="w-full max-w-sm mx-auto p-4 bg-base border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-base-100 dark:border-gray-700">
-        <h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
+            
+        <div className="max-w-lg p-6 bg-none border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{ backdropFilter: "blur(8px)", marginTop: "190px", marginLeft: "auto", marginRight: "auto"}}>
+        <h5 className="mb-3 text-base text-center font-semibold text-gray-900 md:text-xl dark:text-white">
         Connect wallet
         </h5>
-        <p className="text-sm font-normal text-gray-500 dark:text-gray-400">Connect with one of our available wallet providers or create a new one.</p>
+        <p className="text-sm font-normal text-primary-500 dark:text-gray-400 text-center">Connect with one of our available wallet providers or create a new one.</p>
         <ul className="my-4 space-y-3">
         <li>
         <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">

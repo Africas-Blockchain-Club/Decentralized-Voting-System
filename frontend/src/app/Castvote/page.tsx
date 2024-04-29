@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import Layout from '../components/layout';
 import Link from "next/link";
@@ -34,12 +35,12 @@ const CastVote = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center mx-auto h-screen">
-        <div className="w-full max-w-md p-6 bg-gray-100 rounded-lg shadow-md">
-          <h1 className="mb-4 text-2xl font-semibold text-gray-900">Cast Your Vote</h1>
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+      <div className="p-6 bg-none border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{ backdropFilter: "blur(8px)", marginTop: "190px", marginLeft: "auto", marginRight: "auto", width: "400px", height: "450px"}}>
+        
+          <h1 className="pb-10 mb-4 text-2xl font-semibold text-gray-900 text-center">Cast Your Vote</h1>
+          <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
             {candidates.map(candidate => (
-              <div key={candidate.id} className="flex items-center">
+              <div key={candidate.id} className="flex items-center pb-8">
                 <input
                   type="radio"
                   id={`candidate-${candidate.id}`}
@@ -48,19 +49,19 @@ const CastVote = () => {
                   checked={selectedCandidate === candidate.id}
                   onChange={() => handleCandidateSelect(candidate.id)}
                 />
-                <label htmlFor={`candidate-${candidate.id}`} className="ml-2">{candidate.name}</label>
+                <label htmlFor={`candidate-${candidate.id}`} className="ml-2 text-yellow-400 text-bold">{candidate.name}</label>
               </div>
             ))}
             <button
               type="submit"
-              className="w-full px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600"
+              className="w-full px-4 py-4 text-yellow-400 bg-gray-800 rounded-lg hover:bg-gray-600"
               onClick={handleSubmitVote}
               disabled={submitted}
             >
               {submitted ? 'Vote Submitted' : 'Submit Vote'}
             </button>
           </form>
-        </div>
+        
       </div>
     </Layout>
   );
