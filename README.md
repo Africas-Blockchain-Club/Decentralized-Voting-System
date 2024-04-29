@@ -26,7 +26,7 @@ After installation, you can use the Decentralized Voting System by following the
 1. Connect your wallet to serve as your unique ID.
 2. Navigate through the landing page, register, login, view ballot, and cast the vote pages.
 
-## Contributing (
+## Contributing
 
 Contributions are welcome! If you'd like to contribute to the Decentralized Voting System, please follow these guidelines:
 
@@ -39,7 +39,7 @@ Contributions are welcome! If you'd like to contribute to the Decentralized Voti
 
 ## Credits
 
-Denzel SE.
-Cynthia Cleopatra.
-Lethabo008.
-Thuso Bronwnyn Ratombo.
+Denzel SE
+Cynthia Cleopatra
+Lethabo008
+Thuso Bronwnyn Ratombo
