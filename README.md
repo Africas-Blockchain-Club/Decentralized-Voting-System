@@ -39,7 +39,7 @@ Contributions are welcome! If you'd like to contribute to the Decentralized Voti
 
 ## Credits
 
-Denzel SE
-Cynthia Cleopatra 
-Lethabo
-Thuso Bronwnyn Ratombo
+Denzel SE.
+Cynthia Cleopatra.
+Lethabo008.
+Thuso Bronwnyn Ratombo.
