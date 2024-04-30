@@ -27,32 +27,19 @@ const Register = () => {
       <Layout>
         {/* TODO: list of candidate */}
         
-        <button className="btn btn-primary" onClick={async () => { await register()}}>Register</button>
-        {/* <form className="max-w-sm py-10 justify-center mx-auto">
-          <div className="mb-5">
-            <label htmlFor="Uid" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Unique ID </label>
-            <input type="Uid" id="Uid" className="shadow-sm bg-base-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-base-100 dark:border-gray-600 dark:placeholder-base-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Ax0293Cnsjdf"  />
-          </div>
-          <div className="mb-5">
-            <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
-            <input type="name" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-base-100 dark:border-gray-600 dark:placeholder-base-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="John Doe"  />
-          </div>
-          <div className="mb-5">
-            <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-            <input type="password" id="password" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-base-100 dark:border-gray-600 dark:placeholder-base-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  />
-          </div>
-          <div className="mb-5">
-            <label htmlFor="repeat-password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat password</label>
-            <input type="password" id="repeat-password" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-base-100 dark:border-gray-600 dark:placeholder-base-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"  />
-          </div>
-          <div className="flex items-start mb-5">
-            <div className="flex items-center h-5">
-              <input id="terms" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-base-100 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
+        {/* <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={async () => { await register()}}>Register</button> */}
+        <div className="max-w-lg p-6 bg-none border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{backdropFilter: "blur(8px)", marginTop: "100px", marginLeft: "auto", marginRight: "auto"}}> 
+          <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1 className="pb-6 text-center text-3xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl dark:text-white">
+              Register To Vote
+            </h1>
             </div>
-            <label htmlFor="terms" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" className="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+            <main>
+              <div className="flex flex-col mb-8 lg:mb-16 hover:text-blue-700 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-0">
+                <button className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center rounded-lg focus:outline-none focus:ring-4 dark:focus:ring-primary-900 bg-gray-800 text-yellow-400 hover:bg-gray-700 focus:ring-gray-100 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700" onClick={async () => { await register()}}>Register</button> 
+              </div>
+          </main>
           </div>
-          <Link href="/Login" className={isLinkActive("/Login") ? "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800":""}>Register</Link>
-        </form> */}
       </Layout>
     )
 }
