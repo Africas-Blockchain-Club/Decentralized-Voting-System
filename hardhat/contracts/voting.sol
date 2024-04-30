@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.16;
+pragma solidity ^0.8.18;
 
 contract VotingContract {
     string public name;
     string public description;
+    address public owner;
 
     struct Candidate {
         uint256 id;
@@ -12,6 +13,7 @@ contract VotingContract {
     }
 
     struct Voter {
+        address uid;
         bool voted;
         bool registered;
         uint256 vote;
@@ -26,6 +28,7 @@ contract VotingContract {
         require(_candidates.length > 0, "No candidates to vote for.");
         name = _name;
         description = _description;
+        owner = msg.sender;
 
         for (uint256 i = 0; i < _candidates.length; i++) {
             addCandidate(_candidates[i]);
@@ -37,10 +40,23 @@ contract VotingContract {
         candidatesCount++;
     }
 
+    function getOwner() public view returns (address) {
+        return owner;
+    }
+
     function registerVoter() public {
         require(!voters[msg.sender].registered, "Already registered.");
         voters[msg.sender].registered = true;
+        voters[msg.sender].uid = msg.sender;
         registeredVoters.push(msg.sender);
+    }
+
+    function isRegisters() public view returns (bool) {
+        if (voters[msg.sender].uid == msg.sender) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     function castVote(uint256 _candidateId) public {
