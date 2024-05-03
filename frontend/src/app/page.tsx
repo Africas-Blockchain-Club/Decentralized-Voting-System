@@ -18,7 +18,7 @@ export default function Home() {
   
   
     const connect = async () => {
-      if (window.ethereum) {
+      if ("https://scroll-sepolia.drpc.org") {
         try {
 
 
