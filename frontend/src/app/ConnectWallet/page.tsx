@@ -10,9 +10,9 @@ const ConnectWallet= () => {
   
   
     const connect = async () => {
-      if (window.ethereum) {
+      if ("https://scroll-sepolia.drpc.org") {
         try {
-          const web3Instance = new Web3(window.ethereum);
+          const web3Instance = new Web3("https://scroll-sepolia.drpc.org");
           setWeb3(web3Instance);
           const accounts = await web3Instance.eth.requestAccounts();
           setAccounts(accounts);
